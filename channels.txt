@@ -1,0 +1,1 @@
+ligolw_print -t sngl_burst H1-LDAS_STRAIN-968654552-10.xml -c search -c event_id -c ifo -c channel -c peak_time -c peak_time_ns -c central_freq -c start_time -c start_time_ns -c duration -c amplitude -c snr -c confidence -c chisq -c chisq_dof -c bandwidth > H1-LDAS_STRAIN-968654552-10.txt
