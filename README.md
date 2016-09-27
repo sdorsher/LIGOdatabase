@@ -1,0 +1,1 @@
+HBase database intended for use with LIGO data-- though at this point, any properly formatted CSV file will do. 
