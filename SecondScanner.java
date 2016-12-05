@@ -71,7 +71,7 @@ public class SecondScanner{
 	for(Result result: scanner){
 	    Cell cell = result.getColumnLatestCell(Bytes.toBytes(columnFamilies[12]),Bytes.toBytes(columns[12]));
 	    if (ByteBuffer.wrap(cell.getValueArray()).getDouble()
-		>=0.000000){
+		<=25.300000){
 		System.out.println(ByteBuffer.wrap(cell.getValueArray()).getDouble());
 
 		finalCells.add(cell);
