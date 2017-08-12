@@ -1,0 +1,45 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Requirements for the LIGO Event Trigger Database}{}% 2
+\BOOKMARK [1][-]{section.3}{Requirements for three simple queries}{}% 3
+\BOOKMARK [1][-]{section.4}{Relational databases}{}% 4
+\BOOKMARK [1][-]{section.5}{HBase fundamentals}{}% 5
+\BOOKMARK [2][-]{subsection.5.1}{Benefits of HBase}{section.5}% 6
+\BOOKMARK [2][-]{subsection.5.2}{Other things to know before beginning}{section.5}% 7
+\BOOKMARK [2][-]{subsection.5.3}{HBase structure}{section.5}% 8
+\BOOKMARK [2][-]{subsection.5.4}{Hadoop MapReduce}{section.5}% 9
+\BOOKMARK [1][-]{section.6}{LIGO database design}{}% 10
+\BOOKMARK [2][-]{subsection.6.1}{Key: timestamp, channel id}{section.6}% 11
+\BOOKMARK [2][-]{subsection.6.2}{Key: channel id, timestamp}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.3}{Key: timestamp only}{section.6}% 13
+\BOOKMARK [1][-]{section.7}{Ultimate proposal key: detector, search, channel id, time, time in ns, frequency}{}% 14
+\BOOKMARK [1][-]{section.8}{Simple query design}{}% 15
+\BOOKMARK [2][-]{subsection.8.1}{All triggers between time A and time B in channel X, possibly in a given frequency range, possibly above a given SNR threshold,\203}{section.8}% 16
+\BOOKMARK [2][-]{subsection.8.2}{HVeto: all triggers in channel X close to any trigger in channel Y in time}{section.8}% 17
+\BOOKMARK [2][-]{subsection.8.3}{The loudest trigger in all channels close to a specified time}{section.8}% 18
+\BOOKMARK [1][-]{section.9}{Implementation progress}{}% 19
+\BOOKMARK [2][-]{subsection.9.1}{Toy CRUD database updated for HBase 1.x}{section.9}% 20
+\BOOKMARK [2][-]{subsection.9.2}{Structure of the temporary LIGO database}{section.9}% 21
+\BOOKMARK [2][-]{subsection.9.3}{Retrieval mechanisms for the temporary LIGO database}{section.9}% 22
+\BOOKMARK [1][-]{section.10}{Unresolved problems in the LIGO Event Trigger Database}{}% 23
+\BOOKMARK [2][-]{subsection.10.1}{Other software}{section.10}% 24
+\BOOKMARK [1][-]{section.11}{References}{}% 25
+\BOOKMARK [1][-]{section.12}{Appendix A: Toy CRUD Code}{}% 26
+\BOOKMARK [2][-]{subsection.12.1}{CreateTable.java}{section.12}% 27
+\BOOKMARK [2][-]{subsection.12.2}{InsertData.java}{section.12}% 28
+\BOOKMARK [2][-]{subsection.12.3}{RetriveData.java}{section.12}% 29
+\BOOKMARK [2][-]{subsection.12.4}{ScanTable.java}{section.12}% 30
+\BOOKMARK [2][-]{subsection.12.5}{DeleteData.java}{section.12}% 31
+\BOOKMARK [2][-]{subsection.12.6}{DropTable.java}{section.12}% 32
+\BOOKMARK [1][-]{section.13}{Appendix B: LIGO Event Trigger Database Code}{}% 33
+\BOOKMARK [2][-]{subsection.13.1}{CreateTable.java}{section.13}% 34
+\BOOKMARK [2][-]{subsection.13.2}{ReadFileAndInsert.java}{section.13}% 35
+\BOOKMARK [2][-]{subsection.13.3}{GetData.java}{section.13}% 36
+\BOOKMARK [2][-]{subsection.13.4}{Filter.java}{section.13}% 37
+\BOOKMARK [2][-]{subsection.13.5}{FilterString.java}{section.13}% 38
+\BOOKMARK [2][-]{subsection.13.6}{FilterListClass.java}{section.13}% 39
+\BOOKMARK [2][-]{subsection.13.7}{SecondScanner.java}{section.13}% 40
+\BOOKMARK [1][-]{section.14}{Appendix C: Installing and running HBase}{}% 41
+\BOOKMARK [2][-]{subsection.14.1}{Installation}{section.14}% 42
+\BOOKMARK [2][-]{subsection.14.2}{Initializing and running HBase}{section.14}% 43
+\BOOKMARK [3][-]{subsubsection.14.2.1}{Java API}{subsection.14.2}% 44
+\BOOKMARK [3][-]{subsubsection.14.2.2}{HBase shell}{subsection.14.2}% 45
